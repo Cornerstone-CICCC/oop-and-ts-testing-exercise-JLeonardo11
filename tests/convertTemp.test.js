@@ -6,3 +6,14 @@
 const Converter = require('../src/convertTemp')
 
 const convert = new Converter()
+
+
+//test1
+test('Converting 30deg celsius to 86deg fahrenheit', () => {
+    expect(convert.convertToFahrenheit(30)).toBe(86)
+})
+
+//test2
+test('Converting 30deg celsius to 86deg fahrenheit', () => {
+    expect(convert.convertToCelsius(86)).toBe(30)
+})
